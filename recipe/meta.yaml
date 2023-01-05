@@ -1,5 +1,5 @@
 {% set name = "pylhe" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pylhe-{{ version }}.tar.gz
-  sha256: a205e25452256e1c9049656547475fd4434255030ea8c3ee36f678bd7cd9a41f
+  sha256: cccb5f0871d44516e5de2d98b32d2a14154ef96af0745f9f1656cfdebd4b7c38
 
 build:
   noarch: python
@@ -17,14 +17,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools >=61.0.0
     - setuptools_scm >=7.0.1
   run:
     - awkward >=1.2.0
     - python-graphviz >=0.12.0
     - particle >=0.16
-    - python >=3.6
+    - python >=3.7
     - vector >=0.8.1
 
 test:
