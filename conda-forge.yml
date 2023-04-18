@@ -2,5 +2,8 @@ github:
   branch_name: main
   tooling_branch_name: main
 conda_forge_output_validation: true
+bot:
+  # https://conda-forge.org/docs/maintainer/conda_forge_yml.html#bot
+  inspection: update-all
 conda_build:
   pkg_format: '2'
