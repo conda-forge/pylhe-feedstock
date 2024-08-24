@@ -18,8 +18,8 @@ requirements:
   host:
     - pip
     - python >=3.8
-    - setuptools >=61.0.0
-    - setuptools_scm >=7.0.1
+    - hatchling
+    - hatch-vcs
   run:
     - awkward >=1.2.0
     - python-graphviz >=0.12.0
