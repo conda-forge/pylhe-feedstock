@@ -7,7 +7,7 @@ Home: https://github.com/scikit-hep/pylhe
 
 Package license: Apache-2.0
 
-Summary: small package to get structured data out of Les Houches Event files
+Summary: A small package to get structured data out of Les Houches Event files
 
 Development: https://github.com/scikit-hep/pylhe
 
