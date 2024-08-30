@@ -145,6 +145,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@APN-Pucky](https://github.com/APN-Pucky/)
 * [@eduardo-rodrigues](https://github.com/eduardo-rodrigues/)
 * [@lukasheinrich](https://github.com/lukasheinrich/)
 * [@matthewfeickert](https://github.com/matthewfeickert/)
