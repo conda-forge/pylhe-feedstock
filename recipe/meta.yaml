@@ -1,5 +1,6 @@
 {% set name = "pylhe" %}
 {% set version = "0.9.1" %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -11,20 +12,20 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling >=1.13.0
     - hatch-vcs >=0.3.0
   run:
     - awkward >=1.2.0
     - python-graphviz >=0.12.0
     - particle >=0.16
-    - python >=3.8
+    - python >={{ python_min }}
     - vector >=0.8.1
 
 test:
@@ -33,6 +34,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
@@ -48,3 +50,4 @@ extra:
     - matthewfeickert
     - eduardo-rodrigues
     - lukasheinrich
+    - conda-forge/scikit-hep
