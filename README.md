@@ -146,6 +146,7 @@ Feedstock Maintainers
 =====================
 
 * [@APN-Pucky](https://github.com/APN-Pucky/)
+* [@conda-forge/scikit-hep](https://github.com/orgs/conda-forge/teams/scikit-hep/)
 * [@eduardo-rodrigues](https://github.com/eduardo-rodrigues/)
 * [@lukasheinrich](https://github.com/lukasheinrich/)
 * [@matthewfeickert](https://github.com/matthewfeickert/)
