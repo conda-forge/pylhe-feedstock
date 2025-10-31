@@ -1,5 +1,5 @@
 {% set name = "pylhe" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pylhe-{{ version }}.tar.gz
-  sha256: b4610f18b1548d512cf01bc8f3cc20e9d2f22cd7d99fca9877e09bed1700fbb4
+  sha256: 55e00f8e0dd4f246c6876ed3990d6ca5b293e6c06525d47c463a4c11714b7a69
 
 build:
   noarch: python
