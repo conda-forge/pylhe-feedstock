@@ -1,5 +1,5 @@
 {% set name = "pylhe" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pylhe-{{ version }}.tar.gz
-  sha256: 55e00f8e0dd4f246c6876ed3990d6ca5b293e6c06525d47c463a4c11714b7a69
+  sha256: 28d49a82d01af071b5f97024533b89ad055d4374f96af2473f8d409dabbd6462
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - hatch-vcs >=0.3.0
   run:
     - awkward >=1.2.0
-    - python-graphviz >=0.12.0
+    - python-graphviz >=0.19
     - particle >=0.16
     - python >={{ python_min }}
     - vector >=0.8.1
