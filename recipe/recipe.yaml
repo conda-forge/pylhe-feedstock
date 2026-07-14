@@ -1,8 +1,8 @@
 schema_version: 1
 
 context:
-  version: "1.0.4"
-  python_min: "3.9"
+  version: 2.0.0
+  python_min: '3.9'
 
 package:
   name: pylhe
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pylhe/pylhe-${{ version }}.tar.gz
-  sha256: b0a2e00a99d3e50ec23af1c2243d1afdb615a19766c4bb84a39575a27581a118
+  sha256: 36fee45bb13a79ff2067aecc6659d415e7519ddc972274260fa38114d502beec
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -26,17 +26,17 @@ requirements:
   run:
     - awkward >=2.7
     - python-graphviz >=0.19
-    - particle >=0.25
+    - particle >=0.26
     - python >=${{ python_min }}
-    - vector >=1.5.2
-
+    - vector >=1.6.3
+    - h5py >=3.0
 tests:
   - python:
       imports:
         - pylhe
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
       pip_check: true
 
 about:
