@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   version: 2.0.0
-  python_min: '3.9'
+  python_min: '3.10'
 
 package:
   name: pylhe
@@ -21,7 +21,7 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - hatchling >=1.13.0
+    - hatchling >=1.27.0
     - hatch-vcs >=0.3.0
   run:
     - awkward >=2.7
