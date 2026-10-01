@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 2.0.0
+  version: 2.1.0
   python_min: '3.10'
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pylhe/pylhe-${{ version }}.tar.gz
-  sha256: 36fee45bb13a79ff2067aecc6659d415e7519ddc972274260fa38114d502beec
+  sha256: bdbc359831c239f36069a2ea1d6209c16bf20aaddb407b3994ed362ac640c64b
 
 build:
   number: 0
@@ -30,6 +30,7 @@ requirements:
     - python >=${{ python_min }}
     - vector >=1.6.3
     - h5py >=3.0
+    - numpy >=2
 tests:
   - python:
       imports:
